@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void showAtbeg() {
+
+    }
+
     public void BtnClicked(View view){
         TextView txtWelcome = findViewById(R.id.txtwelcome);
         txtWelcome.setText("Hello Raad");
