@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         welcome.startAnimation(animation);
     }
 
-    public void registerDialog() {
+    public void registerDialog(View view) {
         dialogBuilder = new AlertDialog.Builder(this);
         final View registerPopup = getLayoutInflater().inflate(R.layout.popup, null);
 
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
 
     /*public void BtnClicked(View view){

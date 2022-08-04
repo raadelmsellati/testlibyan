@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="176dp"
-        android:onClick="BtnClicked"
         android:text="menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,13 +23,12 @@
         android:id="@+id/button_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="244dp"
-        android:onClick="BtnClicked"
         android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_id2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -48,10 +46,15 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="registerDialog"
         android:text="NEW USER? CREATE ACCOUNT"
-        android:textStyle="bold"
         android:textSize="13sp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="590dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_id2"
+        app:layout_constraintVertical_bias="0.278" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
