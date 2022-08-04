@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
+                //progressBar.setVisibility(View.VISIBLE);
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
@@ -131,8 +131,11 @@ public class MainActivity extends AppCompatActivity {
                                                 public void onComplete(@NonNull Task<Void> task) {
                                                     if(task.isSuccessful()){
                                                         Toast.makeText(MainActivity.this,"User has been registered successfully",Toast.LENGTH_LONG).show();
-                                                        progressBar.setVisibility(View.VISIBLE);
-                                               }
+                                                        dialog.dismiss();
+                                                        //progressBar.setVisibility(View.VISIBLE);
+                                               }else{
+                                                        Toast.makeText(MainActivity.this, "Failed to register",Toast.LENGTH_LONG).show();
+                                                    }
                                             }
                                 });
                             }

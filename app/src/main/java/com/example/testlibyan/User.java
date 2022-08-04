@@ -5,8 +5,8 @@ public class User {
 
     public User() {}
 
-    public User(String fullname, String email){
-        this.username = username;
-        this.email    = email;
+    public User(String register_user, String register_email){
+        this.username = register_user;
+        this.email    = register_email;
     }
 }
