@@ -41,17 +41,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Register Dialog
+    //-------------------------------------------
     public void registerDialog(View view) {
         dialogBuilder = new AlertDialog.Builder(this);
         final View registerPopup = getLayoutInflater().inflate(R.layout.popup, null);
 
-        pp_register = (ImageView) registerPopup.findViewById(R.id.ppRegister);
+
         register_user = (EditText) registerPopup.findViewById(R.id.inputUser);
         register_password = (EditText) registerPopup.findViewById(R.id.inputPassword);
         register_email = (EditText) registerPopup.findViewById(R.id.inputEmail);
 
         createB = (Button) registerPopup.findViewById(R.id.create);
         cancelB = (Button) registerPopup.findViewById(R.id.cancelCreate);
+
+        //Will make the temp pp here instead of ppRegister -> ppTemp
+        pp_register = (ImageView) registerPopup.findViewById(R.id.ppTemp);
+        //Will make the temp pp here
 
         dialogBuilder.setView(registerPopup);
         dialog = dialogBuilder.create();
@@ -71,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    //-----------------------------------------
+
 
 
 
