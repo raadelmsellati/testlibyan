@@ -30,7 +30,15 @@ public class MainActivity extends AppCompatActivity {
 
         // getting the Button from activity_main.xml file
         final ImageView welcome = findViewById(R.id.welcome);
+        final Button loginB = findViewById(R.id.button_id);
+        final Button menuB = findViewById(R.id.button_id2);
+        final TextView register = findViewById(R.id.textView);
+
         welcome.startAnimation(animation);
+        loginB.startAnimation(animation);
+        menuB.startAnimation(animation);
+        register.startAnimation(animation);
+
     }
 
     public void registerDialog(View view) {
