@@ -2,6 +2,7 @@ package com.example.testlibyan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -10,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         welcome.startAnimation(animation);
     }
 
+    public void registerDialog() {
+        dialogBuilder = new AlertDialog.Builder(this);
+        final View registerPopup = getLayoutInflater().inflate(R.layout.popup, null);
+    }
 
 
     /*public void BtnClicked(View view){
