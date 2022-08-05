@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1078413829255",
+    "project_id": "libicious-74cf7",
+    "storage_bucket": "libicious-74cf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078413829255:android:53ca30cd62b29f1cc24422",
+        "android_client_info": {
+          "package_name": "com.example.testlibyan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078413829255-5oo0mtgs2ka0o674qpkd78oskqs1if1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGQE9h23FrICNXKp-ZOeWvqogNZ3h4160"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078413829255-5oo0mtgs2ka0o674qpkd78oskqs1if1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
